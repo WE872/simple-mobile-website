@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Accessories - Simple Mobile</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0d6efd;
+    color: white;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #222;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+}
+
+.navbar a:hover {
+    background-color: #fff;
+    color: black;
+}
+
+/* TITLE */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* GRID */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 30px;
+}
+
+/* CARD */
+.item {
+    background: white;
+    color: black;
+    border-radius: 10px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+.item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+button {
+    background: #0d6efd;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: black;
+}
+</style>
+</head>
+
+<body>
+
+<ul class="navbar">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="phones.html">Phones</a></li>
+    <li><a href="accessories.html">Accessories</a></li>
+    <li><a href="feedback.html">Feedback</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="cart.html">Cart</a></li>
+    <li><a href="offers.html">Offers</a></li>
+</ul>
+<h1>Accessories</h1>
+<div class="card-container">
+
+    <div class="card">
+        <img src="Assets/AirPods.png">
+        <div class="card-content">
+            <h3>AirPods</h3>
+            <p class="price">£129</p>
+            <a href="#" class="btn">Buy Now</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="Assets/charger.jpg">
+        <div class="card-content">
+            <h3>Fast Charger</h3>
+            <p class="price">£25</p>
+            <a href="#" class="btn">Buy Now</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="Assets/case.jpg">
+        <div class="card-content">
+            <h3>Phone Case</h3>
+            <p class="price">£15</p>
+            <a href="#" class="btn">Buy Now</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="Assets/watch.jpg">
+        <div class="card-content">
+            <h3>Smart Watch</h3>
+            <p class="price">£149</p>
+            <a href="#" class="btn">Buy Now</a>
+        </div>
+    </div>
+
+</div>
+
+</div>
+
+</body>
+</html>

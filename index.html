@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Mobile</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0d6efd;
+    color: white;
+}
+
+/* HEADER */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo {
+    width: 80px;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #222;
+    padding: 0;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+}
+
+.navbar a:hover {
+    background-color: #fff;
+    color: black;
+}
+
+/* TIME + DATE */
+#time, #date {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/* CARDS */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    width: 150px;
+    height: 200px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #222;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="header-container">
+        <img src="SM_logo.jpg" class="logo">
+        <h1>Simple Mobile</h1>
+    </div>
+
+    <ul class="navbar">
+        <li><a href="#">Home</a></li>
+        <a href="phones.html">Phones</a>
+        <li><a href="accessories.html">Accessories</a></li>
+        <li><a href="#">Feedback</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="offers.html">Offers</a></li>
+    </ul>
+
+    <h2 style="text-align:center;">Welcome to Simple Mobile</h2>
+    <h3 style="text-align center;">Wellington Jani</h3>
+    <div id="date"></div>
+    <div id="time"></div>
+</header>
+
+<main>
+
+    <h2 style="text-align:center;">Featured Products</h2>
+
+    <div class="card-container">
+
+        <div class="card">
+            <img src="Assets/phone1.jpg">
+        </div>
+
+        <div class="card">
+            <img src="Assets/phone2.jpg">
+        </div>
+        <div class="card">
+       <img src="Assets/phone3.jpg">
+        </div>
+
+                <div class="card">
+            <img src="Assets/phone4.jpg">
+        </div>
+
+        <div class="card">
+            <img src="Assets/phone5.jpg">
+        </div>
+
+        <div class="card">
+            <img src="Assets/phone6.jpg">
+        </div>
+
+        <div class="card">
+            <img src="Assets/phone7.jpg">
+        </div>
+
+    </div>
+
+</main>
+<footer>
+    <p>&copy; 2026 Simple Mobile Store</p>
+</footer>
+
+<script>
+function updateDateTime() {
+    const now = new Date();
+
+    const time = now.toLocaleTimeString();
+    const date = now.toLocaleDateString();
+
+    document.getElementById("time").textContent = time;
+    document.getElementById("date").textContent = date;
+}
+
+setInterval(updateDateTime, 1000);
+updateDateTime();
+</script>
+
+</body>
+</html>

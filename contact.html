@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - Simple Mobile</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0d6efd;
+    color: white;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #222;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+}
+
+.navbar a:hover {
+    background-color: #fff;
+    color: black;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* CONTACT INFO */
+.info {
+    flex: 1;
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* FORM */
+.form {
+    flex: 1;
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: #0d6efd;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #084298;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #222;
+    margin-top: 30px;
+}
+</style>
+</head>
+
+<body>
+
+<ul class="navbar">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="phones.html">Phones</a></li>
+    <li><a href="accessories.html">Accessories</a></li>
+    <li><a href="feedback.html">Feedback</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="cart.html">Cart</a></li>
+    <li><a href="offers.html">Offers</a></li>
+</ul>
+
+<h1 style="text-align:center;">Contact Us</h1>
+
+<div class="container">
+
+    <!-- CONTACT INFO -->
+    <div class="info">
+        <h2>Get in Touch</h2>
+        <p><strong>Phone:</strong> 01234 567890</p>
+        <p><strong>Email:</strong> support@simplemobile.com</p>
+        <p><strong>Address:</strong> 123 High Street, London, UK</p>
+
+        <p>
+            If you have any questions about our products or services,
+            feel free to contact us anytime. We are here to help!
+        </p>
+    </div>
+
+    <!-- CONTACT FORM -->
+    <div class="form">
+        <h2>Send a Message</h2>
+
+        <form onsubmit="alert('Message sent successfully!')">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2025 Simple Mobile Store</p>
+</footer>
+
+</body>
+</html>
